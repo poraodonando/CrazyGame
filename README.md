@@ -1,2 +1,0 @@
-# fxzkhywq
- Projeto ARG
