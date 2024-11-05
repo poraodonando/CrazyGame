@@ -29,7 +29,15 @@ function countDown(){
         clearInterval(state.actions.countDownTimerId);
         clearInterval(state.actions.timerId);
         alert("Game Over " + state.values.result);
+
+        if(state.values.result >=2){
+            alert("Parabens!");
+        }
+    
+        
     }
+    
+   
 }
 
 function playSound(audioName){
