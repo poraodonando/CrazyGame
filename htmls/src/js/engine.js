@@ -9,7 +9,7 @@ const state = {
 
     values: {
         
-        gameVelocity: 100,
+        gameVelocity: 500,
         hitPosition: 0,
         result: 0,
         currentTme: 60,
@@ -30,8 +30,8 @@ function countDown(){
         clearInterval(state.actions.timerId);
         alert("Game Over " + state.values.result);
 
-        if(state.values.result >=2){
-            alert("Parabens!");
+        if(state.values.result >=35){
+            alert("resposta: ralphy");
         }
     
         
