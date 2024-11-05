@@ -30,8 +30,15 @@ function countDown(){
         clearInterval(state.actions.timerId);
         alert("Game Over " + state.values.result);
 
+        if(state.values.result<35){
+            alert("Tá muito nervoso")
+            alert("Vai reprovar!!! kkkkkk");
+        }
+
         if(state.values.result >=35){
-            alert("resposta: ralphy");
+            alert("Dividi 40 por meio e somei com a  metade do resultado da divisao. Quanto da ?");
+            
+            alert("Se errar perde tudo!")
         }
     
         
