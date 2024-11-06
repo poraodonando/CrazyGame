@@ -1,8 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
   <head>
-    <title>No final aparecerá um novo código, anote e coloque nas respostas</title>
-   
+    <title>PopColor+ v1.0: jogo de l�gica para quem gosta de pensar</title>
+    <meta name="author" content="Gabriel Barros | www.gabrielbarros.com.br" />
+    <meta name="copyright" content="� 2009 by Gabriel Barros" />
 
     <style type="text/css"> /* Estilos da p�gina */
       <!--  
@@ -40,7 +41,7 @@
       cor[4] = "#FF9900";    // Laranja
       cor[5] = "#000000";    // Preto
 
-      nivel = 3;       // N�vel padr�o inicial: f�cil 
+      nivel = 1;       // N�vel padr�o inicial: f�cil 
       Pensar();        // Ao iniciar o jogo, o PC j� deve "pensar" em uma combina��o
       partidas = 1;    // N�mero de partida inicial
 
@@ -123,7 +124,7 @@
         if (erro == 0 && partidas != 1) {
           document.getElementById("status").innerHTML += "<i>ACERTOU em " + partidas + " partidas!</i>";
           HabilitarBotoes(false);
-          alert("fxzkhywq")
+          alert("Resposta: fxzkhywq")
         }
 
         /*
@@ -137,7 +138,7 @@
         else if (erro == 0 && partidas == 1) {          
           document.getElementById("status").innerHTML += "<i>ACERTOU em apenas 1 partida!\nIsso � pura sorte!</i>";
           HabilitarBotoes(false);
-          alert("Coloque fxzkhywq no site")
+          alert("Resposta: fxzkhywq")
         }
 
         // CASO 3: Apenas 1 bloco errado. Escrever no singular.
@@ -196,9 +197,9 @@
       }
 
       function MudarNivel() {
-        nivel = 1;              // Atualiza n�vel
+        nivel = document.jogo.nivel.value;              // Atualiza n�vel
 
-        if (nivel == 3) {
+        if (nivel == 1) {
           document.getElementById("facil").style.display = "inline";    // Atualiza campos <select>, com as novas cores
           document.getElementById("medio").style.display = "none";
           document.getElementById("dificil").style.display = "none";
